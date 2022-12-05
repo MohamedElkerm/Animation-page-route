@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'modules/test.dart';
+import 'modules/page1.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,11 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:const  Test(),
+      home:const  Page1(),
     );
   }
 }
